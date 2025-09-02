@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Viewer 3D</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <style>
+    html, body { margin:0; height:100%; background:transparent; }
+    model-viewer { width:100%; height:100%; display:block; }
+  </style>
+</head>
+<body>
+  <model-viewer
+    src="./crystal.glb"
+    alt="Modello 3D"
+    auto-rotate
+    auto-rotate-delay="0"
+    rotation-per-second="30deg"
+    camera-controls
+    interaction-prompt="auto"
+    style="background: transparent;">
+  </model-viewer>
+</body>
+</html>
